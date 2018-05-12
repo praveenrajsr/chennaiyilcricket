@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register You</title>
+    <link rel="stylesheet" href="css/regist.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/proximity.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Menu -->
+            <a href="#cd-nav" class="cd-nav-trigger">
+                Menu<span><!-- used to create the menu icon --></span>
+             </a> <!-- .cd-nav-trigger -->
+
+            <main class="backgroudPhoto">
+                <div class="container-fluid content  cd-selected">
+                    <form class="form" action="" method="">
+                        <div class="form__item">
+                            <label class="form__label" for="firstname"> Name *</label>
+                            <input class="form__input" type="text" name="firstname" id="firstname" value="" required>
+                            <div class="form__error"></div>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="lastname">Date Of Birth *</label>
+                            <input class="form__input" type="date" name="lastname" id="lastname" required>
+                            <div class="form__error"></div>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="email">Email Address *</label>
+                            <input class="form__input" type="email" name="email" id="email" required>
+                            <div class="form__error"></div>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="phone">Phone Number</label>
+                            <input class="form__input" type="tel" name="phone" id="phone" value="" required>
+                            <div class="form__error"></div>
+                        </div>
+                        <div class="form__item form__item--full">
+                            <label class="form__label" for="company">Your Address</label>
+                            <input class="form__input" type="text" name="address" id="address" value="" required>
+                            <div class="form__error"></div>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="firstname"> Aadhar Number *</label>
+                            <input class="form__input" type="text" name="aadhar number" id="aadhar number" value="" required>
+                            <div class="form__error"></div>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="firstname"> PAN Number *</label>
+                            <input class="form__input" type="text" name="pan number" id="pan number" value="" required>
+                            <div class="form__error"></div>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="category">Category</label>
+                            <select class="form__input__dropdown"  name="" id="">
+                                <option value="">Employee</option>
+                                <option value="">Student</option>
+                            </select>
+                            <div class="form__error"></div>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="category">Id</label>
+                            <select  class="form__input__dropdown" name="" id="">
+                                <option  class="form__input" value="Company">Company</option>
+                                <option  class="form__input" value="College">College</option>
+                            </select>
+                            <div class="form__error"></div>
+                        </div>
+                        <h4>Exteded Details</h4><br><br>
+                        <div class="form__item">
+                            <label class="form__label" for="location">Parent or Guardian Name *</label>
+                            <input class="form__input" type="text" name="parentName" id="parentname" value="" required>
+                            <div class="form__error"></div>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="location">Parent Contact Number *</label>
+                            <input class="form__input" type="text" name="parentNumber" id="parentnumber" value="" required>
+                            <div class="form__error"></div>
+                        </div>
+                        <div class="form__item form__item--full">
+                            <label class="form__label" for="location">Parent Aadhar Number *</label>
+                            <input class="form__input" type="text" name="parentAadharNumber" id="parent_Aadhar_umber" value="" required>
+                            <div class="form__error"></div>
+                        </div>
+                        <h4>Physical Details</h4><br>
+                        <div class="form__item">
+                            <label class="form__label" for="location">Surgery if any</label>
+                            <input class="form__input" type="text" name="surgery" id="surgery" value="">
+                            <div class="form__error"></div>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="location">Affected illness if any</label>
+                            <input class="form__input" type="text" name="illness" id="illness" value="">
+                            <div class="form__error"></div>
+                        </div>
+                        <div class="form__item form__item--full form__item--actions">
+                            <input class="form__button button" type="submit" name="register" value="Register">
+                        </div>
+                    </form>
+                </div><br>
+                <section class="container-fluid">
+                    this is Footer!
+                </section>
+            </main>
+        </div>
+    </div>
+    <nav class="cd-nav-container">
+            <header>
+                <h3>Menu</h3>
+                <a href="#0" class="cd-close-nav">close</a>
+            </header>
+            <ul class="cd-nav">
+                <li data-menu="index">
+                    <a href="index.html">
+                        <span>
+                            <svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64"><g transform="translate(0, 0)"> <polyline data-cap="butt" fill="none" stroke="#9e85d0" stroke-width="2" stroke-miterlimit="10" points="10,24.9 10,60 26,60 26,44 38,44 38,60 54,60 54,24.9 " stroke-linejoin="square" stroke-linecap="butt"></polyline> <polyline data-color="color-2" fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points=" 4,30 32,6 60,30 " stroke-linejoin="square"></polyline> <rect data-color="color-2" x="26" y="24" fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="12" height="10" stroke-linejoin="square"></rect> </g></svg>
+                        </span>
+                        <em>Home</em>
+                    </a>
+                </li>
+                <li data-menu="About-us">
+                    <a href="about.html">
+                        <span>
+                                <svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64"> <g transform="translate(0, 0)"> <polyline data-color="color-2" fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points=" 38,16 62,16 62,58 2,58 2,16 26,16 " stroke-linejoin="square"></polyline> <path fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M38,20H26V8 c0-3.3,2.7-6,6-6h0c3.3,0,6,2.7,6,6V20z" stroke-linejoin="square"></path> <path fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M20,38L20,38 c-2.2,0-4-1.8-4-4v-2c0-2.2,1.8-4,4-4h0c2.2,0,4,1.8,4,4v2C24,36.2,22.2,38,20,38z" stroke-linejoin="square"></path> <line fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="38" y1="36" x2="54" y2="36" stroke-linejoin="square"></line> <line fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="38" y1="44" x2="48" y2="44" stroke-linejoin="square"></line> <path fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,48H10v0 c0-3.3,2.7-6,6-6h8C27.3,42,30,44.7,30,48L30,48z" stroke-linejoin="square"></path> <line fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="32" y1="12" x2="32" y2="10" stroke-linejoin="square"></line> </g> </svg>
+                            </span>
+                        <em>About Us</em>
+                    </a>
+                </li>
+                <li class="cd-selected" data-menu="Register">
+                    <a href="register.html">
+                        <span>
+                            <svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64"> <g transform="translate(0, 0)"> <polyline data-color="color-2" fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points=" 22,12 22,4 42,4 42,12 " stroke-linejoin="square"></polyline> <line fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="44" y1="44" x2="20" y2="44" stroke-linejoin="square"></line> <polyline fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="12,44 2,44 2,12 62,12 62,44 52,44 " stroke-linejoin="square"></polyline> <polyline fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="58,44 58,60 6,60 6,44 " stroke-linejoin="square"></polyline> <rect data-color="color-2" x="22" y="22" fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="20" height="10" stroke-linejoin="square"></rect> <rect data-color="color-2" x="12" y="40" fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="8" stroke-linejoin="square"></rect> <rect data-color="color-2" x="44" y="40" fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="8" stroke-linejoin="square"></rect> </g> </svg>
+                        </span>
+                        <em>Register</em>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="cd-overlay"><!-- shadow layer visible when navigation is visible --></div>
+    <script src="js/proximty.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/nearby.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script>
+
+
+    </script>
+</body>
+</html>
