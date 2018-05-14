@@ -195,16 +195,26 @@ footer a:hover{
     margin-top: 100px;
     margin-bottom: 100px; 
 }
-.sponsor-img{
+.slick-wrapper img{
     height: 150px;
-    width: 50px;
+    width: 200px;
 }
-@media screen and (orientation: portrait){
-    .sponsor-img{
-        height: 150px;
-        width: 250px;
-        padding-left: 100px;
+.slick-container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.slick-wrapper{
+    margin-left: 1%;
+    width: 96vw;
+}
+@media (max-width:768px){
+    .slick-wrapper img{
+        height: 200px;
+        width: 400px;
     }
+}
+.slick-wrapper{
+    margin-left: 0%;
 }
 @media screen and (orientation: portrait){
     .custom-footer{
@@ -212,5 +222,12 @@ footer a:hover{
     }
     .custom-footer  .second-div{
         padding-top: 20px;
+    }
+    .slick-wrapper img{
+        height: 110px;
+        width: 160px;
+    }
+    .slick-wrapper{
+        overflow-x: hidden;
     }
 }

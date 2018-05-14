@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick.theme.css">
     <link rel="stylesheet" href="css/main.css">
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -26,7 +28,7 @@
                     <a class="nav-link scroll" href="#main-section">HOME </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://praveenrajsr.github.io/chennaiyilcricket/register.html">REGISTER</a>
+                    <a class="nav-link" href="/register.html">REGISTER</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link scroll" href="#wrapper">ABOUT</a>
@@ -39,7 +41,7 @@
             <div class="row">
                 <div class="text-center col-md-12 col-lg-12 col-sm-12 col-xl-12">
                     <img class="img-fluid mainLogo mx-auto" src="assets/logo/logo.png" alt="">
-                    <a class="btn btn-danger" href="https://praveenrajsr.github.io/chennaiyilcricket/register.html">REGISTER NOW!</a>
+                    <a class="btn btn-danger" href="/register.html">REGISTER NOW!</a>
                 </div>
             </div>
         </section>
@@ -71,12 +73,14 @@
         </div>
         <div class="handle"></div>
     </section>
-    <section id="sponsors" class="container sponsors">
-        <div class="row">
-            <h2 class="col-lg-12">Our <br> Sponsors</h2>
-            <img class="sponsor-img col-lg-4 col-xl-4 col-sm-6" src="assets/sponsors/event.png" alt="" >
-            <img class="sponsor-img col-lg-4 col-xl-4 col-sm-6" src="assets/sponsors/star.png" alt="" >
-            <img class="sponsor-img col-lg-4 col-xl-4 col-sm-12" src="assets/sponsors/vivo.png" alt="">
+    <section class="slick-container">
+        <div class="slick-wrapper">
+                <div><img src="assets/sponsors/event.png" alt=""></div>
+                <div><img src="assets/sponsors/star.png" alt="" ></div>
+                <div><img src="assets/sponsors/vivo.png" alt="" ></div>
+                <div><img src="assets/sponsors/event.png" alt="" ></div>
+                <div><img src="assets/sponsors/star.png" alt="" ></div>
+                <div><img src="assets/sponsors/vivo.png" alt="" ></div>
         </div>
     </section>
     <footer class="container-fluid">
@@ -93,5 +97,18 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>3
+        $(document).ready(function(){
+            $('.slick-wrapper').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                variableWidth: true,
+                arrows: true
+            });
+        })
+    </script>
 </body>
 </html>
