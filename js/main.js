@@ -69,3 +69,41 @@ $(document).ready(function(){
 	});	
 
 });
+
+$(document).ready(function(){
+	var owl = $('.owl-carousel');
+	owl.owlCarousel({
+		items: 5,
+		loop: true,
+		margin: 10,
+		responsiveClass: true,
+		autoplay: true,
+		autoplayTimeout: 1000,
+		autoplayHoverPause: true,
+		lazyLoad: true,
+		responsive: {
+			0:{
+				items: 3,
+				nav: true,
+				autoplay: true,
+			},
+			600:{
+				items: 3,
+				nav: false,
+				autoplay: true,
+			},
+			1000: {
+				items: 5,
+				nav: true,
+				loop: true,
+				autoplay: true,
+			},
+			1024: {
+				items: 5,
+				nav: true,
+				loop: true,
+				autoplay: true,
+			},
+		}
+	});
+});
