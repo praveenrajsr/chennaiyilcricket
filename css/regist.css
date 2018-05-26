@@ -49,7 +49,7 @@ form{
 .content{
     position: relative;
 }
-section{
+footer{
     position: relative;
     height: 400px;
     background-color: darkslategray;
@@ -723,7 +723,6 @@ section{
     line-height: 2;
     color: #78626a;
   }
-  
   .no-js main, .no-js .cd-section {
     height: auto;
     overflow: visible;
@@ -775,5 +774,64 @@ section{
     .no-js .cd-nav li:nth-of-type(3n) a {
       border-right-width: 1px solid #e0cf75;
     }
+  }
+
+  .stepper {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .stepper .col {
+    order: 0;
+  }
+  
+  .stepper.stepper--horizontal {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: flex-start;
+  }
+  .stepper.stepper--horizontal .col {
+    flex: 0 1 33.3%;
+    align-self: auto;
+    padding: 20px 0;
+  }
+  .stepper.stepper--horizontal .col span.step-number {
+    float: left;
+    display: inline-block;
+    background-color: #b1b1b1;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 500px;
+  }
+  .stepper.stepper--horizontal .col .step-title {
+    color: #fff;
+    padding: 10px 5px 5px 12px;
+    display: inline-block;
+    width: 85%;
+  }
+  .stepper.stepper--horizontal .col .step-title:after {
+    content: "";
+    border-bottom: dotted 1px #ccc;
+    display: inline-block;
+    width: 80%;
+    float: right;
+    position: relative;
+    top: -10px;
+  }
+  .stepper.stepper--horizontal .col .step-title span {
+    display: inline-block;
+    position: relative;
+    z-index: 9;
+    padding-right: 4px;
+  }
+  .stepper.stepper--horizontal .col.current span.step-number {
+    background-color: #448AFF;
+  }
+  .stepper.stepper--horizontal .col.current .step-title {
+    color: #f1c40f;
   }
   
